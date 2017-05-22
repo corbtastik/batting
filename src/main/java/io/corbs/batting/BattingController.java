@@ -122,7 +122,7 @@ public class BattingController {
     @Value("${server.port}")
     private Integer port;
 
-    @RequestMapping("/batting/{playerId}")
+    @RequestMapping("/player/{playerId}")
     public Response batting(@PathVariable String playerId) {
         Batting batting = new Batting();
         if(!StringUtils.isEmpty(playerId)) {
